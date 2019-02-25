@@ -1,0 +1,6 @@
+:language.protector::
+//eob =: eof
+:language.status::{
+    p(warning) ** #p01# , ...
+    
+    }

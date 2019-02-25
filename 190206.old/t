@@ -1,0 +1,5 @@
+p 'hello'
+a(b(c(d)e),     [p 'hello'])
+//这是一条注释，下面一条是未定义的用户指令，用于识别连续长英文，和记录structure。
+
+bcad jfgjshkh         *'#&fs hxk#!'

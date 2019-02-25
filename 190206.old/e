@@ -1,0 +1,23 @@
+address like street 
+AND 
+vote = True 
+AND 
+(
+    (
+    age>=25 
+    AND 
+    gender = M 
+) 
+    OR 
+    (
+    age between [20,30] 
+    AND 
+    gender = F 
+) 
+    OR 
+    (
+    age >= 70 
+    AND 
+    eyes != blue 
+) 
+) 
