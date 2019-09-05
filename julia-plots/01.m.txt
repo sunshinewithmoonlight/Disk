@@ -1,0 +1,7 @@
+say-in
+say-out
+　　　　想到什么就写什么，是惬意的方式！
+
+exist
+is-not	..[`recipt:not][`set:`NaN]..[`recipt:[`set:`false]]
+

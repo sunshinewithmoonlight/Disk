@@ -1,0 +1,78 @@
+        if (i__lminputInt%19 - 19 < 4 && 19 - i__lminputInt%19 < 4) || (i__lminputInt/19 - 19 < 4 && 19 - i__lminputInt/19 < 4) {
+            for (i__lminputInt_aroundIndex, i__lminputInt_around) in l_db4.enumerated() {
+                if (i__lminputInt_around%19 - i__lminputInt > 5 || i__lminputInt_around%19 - i__lminputInt < -5) {
+                    l_db4.remove(at:i__lminputInt_aroundIndex)
+                }
+                if (i__lminputInt_around < 0 || i__lminputInt_around > 360) {
+                    l_db4.remove(at:i__lminputInt_aroundIndex)
+                }
+            }
+        }
+
+
+        a0 = 
+        a1 = 
+        ...
+        a8 =
+        switch(mnindex){
+        case 0:
+        list0 = list4 + list5 + list6 + list7 + list8
+        break;
+        case 1:
+        list0 = list3 + list4 + list5 + list6 + list7 + list8
+        break;
+        case 2:
+        list0 = list2 + list3 + list4 + list5 + list6 + list7 + list8
+        break;
+        case 3:
+        list0 = list1 + list2 + list3 + list4 + list5 + list6 + list7 + list8
+        break;
+        case 15:
+        list0 = list0 + list1 + list2 + list3 + list4 + list5 + list6 + list7
+        break;
+        case 16:
+        list0 = list0 + list1 + list2 + list3 + list4 + list5 + list6
+        break;
+        case 17:
+        list0 = list0 + list1 + list2 + list3 + list4 + list5
+        break;
+        case 18:
+        list0 = list0 + list1 + list2 + list3 + list4
+        break;
+        default:
+        list0 = list0 + list1 + list2 + list3 + list4 + list5 + list6 + list7 + list8
+        break;
+        }
+        for (list0Elem_index ,list0Elem) in list0.enumerated() {
+            if (list0Elem < 0 || list0Elem > 360) {
+                list0.remove(at:list0Elem_index)
+            }
+        }
+
+
+        I = 0
+        while (I < List0.count) {
+            if (List0[I] < 0 || List0[I] > 360) {
+                list0.remove(at:I)
+                i -= 1
+            }
+            i += 1
+        }
+        
+
+        [0, 1, 2, 3, 4,...,18]
+        [0, 1, ...]
+
+
+        开发笔记：
+            for (Elem, Index) in List.enumerated(){List.remove(at:Index)} 方法只能使用一次,即:
+            for (Elem, Index) in List.enumerated(){if ( == ){List.remove(at:Index); break;}}
+            使用多次可以使用:
+            I = 0; while (I < List0.count) { if ( ... ) { list0.remove(at:I); i -= 1; } i += 1; }
+
+
+        -4-4*19 -3..    -2..    -1..    -..     +1..    +2..    +3..    +4..    
+                -3..
+                -3..
+                -3
+        -4      -3      ..      ..      _       
